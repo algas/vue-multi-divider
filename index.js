@@ -2,12 +2,12 @@ let app = new Vue({
   el: '#app',
   data: {
     dividers: [
-      { enable: true },
-      { enable: false },
-      { enable: true },
-      { enable: false },
-      { enable: false },
-      { enable: true, last: true }
+      { value: 0, enable: true },
+      { value: 10, enable: false },
+      { value: 20, enable: true },
+      { value: 30, enable: false },
+      { value: 40, enable: false },
+      { value: 50, enable: false }
     ],
     grids: [
       { value: 0 },
@@ -15,7 +15,7 @@ let app = new Vue({
       { value: 20 },
       { value: 30 },
       { value: 40 },
-      { value: 50, last: true },
+      { value: 50 },
     ],
     message: 'Vue multi divider!!'
   },

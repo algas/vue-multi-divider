@@ -10,13 +10,13 @@
     <div id="app">
       {{ message }}
       <div class="slider">
-        <span class="divisorValue">0</span>
-        <span class="divisorValue">10</span>
-        <span class="divisorValue">20</span>
-        <span class="divisorValue">30</span>
-        <span class="divisorValue">40</span>
-        <span class="divisorValue last">50</span>
-        <span v-for="div in dividers" :class="['thumb', div.enable ? '' : 'invisible', div.last ? 'last' : '']"></span>
+        <div v-for="div in dividers" class="dividers">
+          <div class="thumb_group">
+            <span v-if="div.enable">{{ div.value }}</span>
+            <span :class="['thumb', div.enable ? '' : 'invisible', div.last ? 'last' : '']">
+            </span>
+          </div>
+        </div>
         <p class="line"></p>
         <span v-for="(grid, index) in grids" :class="['dot', grid.last ? 'last' : '']" @click="toggleGrid(index)"></span>
       </div>
