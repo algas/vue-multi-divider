@@ -1,0 +1,19 @@
+{
+  "name": "vue-multi-divider",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/algas/vue-multi-divider.git"
+  },
+  "author": "Masahiro Yamauchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/algas/vue-multi-divider/issues"
+  },
+  "homepage": "https://github.com/algas/vue-multi-divider#readme"
+}

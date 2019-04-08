@@ -1,0 +1,37 @@
+.slider {
+  width: 600px;
+}
+p.line {
+  margin-top: 0px;
+  margin-bottom: -13px;
+  border-bottom: 2px solid blue;
+}
+.thumb {
+  width: 0;
+  height: 0;
+  margin-right: 105px;
+  border: 6px solid transparent;
+  border-top: 8px solid red;
+} 
+.dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-last {
+  height: 12px;
+  width: 12px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.thumb.invisible {
+  width: 0;
+  height: 0;
+  margin-right: 105px;
+  border: 6px solid transparent;
+  border-top: 8px solid #fff;
+}
