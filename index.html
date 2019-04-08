@@ -12,14 +12,19 @@
       <div class="slider">
         <div v-for="div in dividers" class="dividers">
           <div class="thumb_group">
-            <span v-if="div.enable">{{ div.value }}</span>
-            <span :class="['thumb', div.enable ? '' : 'invisible', div.last ? 'last' : '']">
+            <span v-if="div.enabled">{{ div.value }}</span>
+            <span :class="['thumb', div.enabled ? '' : 'invisible', div.last ? 'last' : '']">
             </span>
           </div>
         </div>
-        <p class="line"></p>
+        <div class="line"></div>
         <span v-for="(grid, index) in grids" :class="['dot', grid.last ? 'last' : '']" @click="toggleGrid(index)"></span>
       </div>
+      <ul>
+        <li v-for="condition in conditions">
+          {{ conditionString(condition) }}
+        </li>
+      </ul>
     </div>
     <script src="./index.js"></script>
   </body>
