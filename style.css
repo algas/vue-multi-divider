@@ -19,7 +19,7 @@ p.line {
 .dot {
   height: 12px;
   width: 12px;
-  margin-right: 100px;
+  margin-right: 105px;
   background-color: blue;
   border-radius: 50%;
   display: inline-block;
@@ -34,3 +34,10 @@ p.line {
   border: 6px solid transparent;
   border-top: 8px solid #fff;
 }
+.divisorValue {
+  margin-right: 90px;
+}
+.divisorValue.last {
+  margin-right: 0px;
+}
+
