@@ -10,18 +10,14 @@
     <div id="app">
       {{ message }}
       <div class="slider">
-        <span class="thumb"></span>
-        <span class="thumb invisible"></span>
-        <span class="thumb"></span>
-        <span class="thumb"></span>
-        <span class="thumb invisible"></span>
+        <span class="thumb" v-for="div in dividers" :class="[ div.enable ? '' : 'invisible', div.last ? 'last' : '' ]"></span>
         <p class="line"></p>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
-        <span class="dot-last"></span>
+        <span class="dot last"></span>
       </div>
     </div>
     <script src="./index.js"></script>

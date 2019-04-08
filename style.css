@@ -13,6 +13,9 @@ p.line {
   border: 6px solid transparent;
   border-top: 8px solid red;
 } 
+.thumb.last {
+  margin-right: 0px;
+}
 .dot {
   height: 12px;
   width: 12px;
@@ -21,12 +24,8 @@ p.line {
   border-radius: 50%;
   display: inline-block;
 }
-.dot-last {
-  height: 12px;
-  width: 12px;
-  background-color: blue;
-  border-radius: 50%;
-  display: inline-block;
+.dot.last {
+  margin-right: 0px;
 }
 .thumb.invisible {
   width: 0;
